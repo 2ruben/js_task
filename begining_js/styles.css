@@ -1,0 +1,158 @@
+*{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidenav {
+    height: 95vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #020016;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 20px;
+    margin: 10px;
+
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:nth-child(1):hover {
+    background-color: #243458;
+    padding-left: 10px;
+
+  }
+
+  .menu-list:hover {
+    background-color: #243458;
+    margin-left: 18px;
+    margin-right: 18px;
+    border-radius: 10px;
+
+  }
+  
+  .sidenav .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  #burger-menu {
+    font-size:30px;
+    cursor: pointer;
+    width: 50px;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .burger-menu-container {
+    height: 95vh;
+    width: 80px;
+    position: fixed;
+    background-color: #020016;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+  }
+
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .modal {
+    text-align: center;
+  }
+
+  .counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+
+  .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Algura completa */
+    overflow: auto; /* Se activará el scroll si es necesario */
+    background-color: rgba(0,0,0,0.5); /* Color negro con opacidad del 50% */
+  }
+
+  #abrirModal {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #020016;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  
+  .contenido-modal {
+    position: relative; 
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 60%;
+    -webkit-animation-name: animarsuperior;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animarsuperior;
+    animation-duration: 0.5s
+  }
+  
+
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animarsuperior {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+
+  .cerrar {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  .cerrar:hover,
+  .cerrar:focus {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+    cursor: pointer;
+  }

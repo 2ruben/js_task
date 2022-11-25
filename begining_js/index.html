@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="side-menu" class="sidenav">
+  <a href="javascript:void(0)" class="close-btn" onclick="close_nav()">&times;</a>
+  <a class="menu-list" href="index.html">Contador</a>
+  <a class="menu-list" href="https://2ruben.github.io">Portfolio</a>
+  <a class="menu-list" href="https://github.com/2ruben">Github</a>
+</div>
+<div class="burger-menu-container">
+<span id="burger-menu" onclick="open_nav()">&#9776; </span>
+</div>
+
+<main>
+<div class="main-content">
+    <button id="abrirModal">¡Quiero usar el contador!</button>
+    <div id="ventanaModal" class="modal">
+      <div class="contenido-modal">
+          <span class="cerrar">&times;</span>
+          <div class="counter">
+            <div class="title">
+                <h1>CONTADOR</h1>
+            </div>
+                <span id="counter-value">
+                    0
+                </span>
+                <div class="btns-counter-container">
+                    <button class="btn-counter increase">Aumentar</button>
+                    <button class="btn-counter reset">Resetear</button>
+                    <button class="btn-counter decrease">Disminuir</button>
+                </div>
+      
+            </div>
+      </div>
+    </div>
+
+</div>
+</main>
+
+
+   <script src="./functions.js"></script>
+</body>
+</html> 
